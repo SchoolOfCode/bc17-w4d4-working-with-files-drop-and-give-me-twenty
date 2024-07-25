@@ -6,11 +6,11 @@ const fileName = "quotes.json";
 
 export async function getQuotes() {
     try {
-        const quotes = await fs.readFile( fileName, 'utf-8',getQuotes());
-console.log(quotes);
-}catch (error){ 
-    console.error(error);
-}
+        const quotes = await fs.readFile(fileName, 'utf-8');
+        console.log (quotes);
+    }catch (error){ 
+        console.error(error);
+    }
 }
 getQuotes()
 
